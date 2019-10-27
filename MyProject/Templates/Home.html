@@ -1,0 +1,10 @@
+{% extends 'Style.html' %}
+
+{% block content %}
+    <h1>Get the Fibonacci number in the position you enter!<h1>
+    
+    <form method="post" action="">{% csrf_token %}
+        Enter the number : {{ form.r }}
+        <input type="submit">
+    </form>
+{% endblock %}
